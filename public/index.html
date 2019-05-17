@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flash-tool server</title>
+  </head>
+
+  <body>
+    <h2>Welcome to the Flash-tool server!</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <label for="firmware-zip">File to upload</label>
+      <input type="file" name="firmware-zip" />
+      <button type="submit">Upload</button>
+    </form>
+    <hr />
+    <a href="http://localhost:3000/api/firmwares"
+      >List all firmwares in the database</a
+    >
+  </body>
+</html>
